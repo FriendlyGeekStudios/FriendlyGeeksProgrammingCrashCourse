@@ -99,9 +99,12 @@ Converting `200d` into hex can be done as: `200/16` = `12` with a remainder of `
 You can convert hex back to decimal by multiplying each number by 16 raised to its place value and summing them all together. For `0xC8`: `C*(16^1) + 8*(16^0) = 200`
 
 ## Excercises 
-1. Convert the decimal value 68 into binary. `1000100b`
-2. Convert 00110101 into decimal: `53d`
-3. How many bits are in a 4-byte number? `32 bits`
-4. Convert `FFh` to Decimal: `255`
-5. Convert `0xFF01` to binary: `1111111100000001`
-6. Convert `1011b` into hex: `0xB`
+1. Convert the decimal value 68 into binary.
+2. Convert 00110101 into decimal.
+3. How many bits are in a 4-byte number?
+4. Convert `FFh` to Decimal.
+5. Convert `0xFF01` to binary.
+6. Convert `1011b` into hex.
+7. What's the maximum number (in decimal) you can store in 16 bits?
+8. What's the maximum number (in decimal) you can store in 32 bits?
+9. What about in 31 bits?
