@@ -4,20 +4,35 @@ The C language has been around since the late 60's although it saw the most deve
 
 ### Environment Setup
 Let’s start by first creating an environment conducive to programming. I strongly encourage using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) which you can install following this guide. You should also, if you don’t have it installed already, get [Visual Studio Code](https://code.visualstudio.com/) (Not Visual Studio!). Once you have both installed, open VS Code, and select File > Open Folder
+
 ![open_folder](images/introduction_to_c_open_folder.PNG)
+
 From there, I recommend creating a new folder for these exercises and storing the files there. Once you’ve opened your folder, you should have an empty explorer pane:
+
 ![empty_explorer](images/introduction_to_c_empty_explorer.PNG)
+
 You can right click anywhere in there and create a new file. We’re going to call this first one hello_word.c and then inside the file, we’re going to add the following code:
+
 ![hello_world_code](images/introduction_to_c_hello_world.PNG)
+
 In order to compile and run this program, we’re going to need a terminal available to us. At the top of you VS Code window, select Terminal > New Terminal:
+
 ![new_terminal](images/introduction_to_c_new_terminal.PNG)
+
 That should open a new window at the bottom of your screen that looks something like so:
+
 ![empty_terminal](images/introduction_to_c_empty_terminal.PNG)
+
 From here, select the down arrow next to the + icon and select your WSL option. Mine is Ubuntu WSL, hopefully yours is similar:
+
 ![wsl_select](images/introduction_to_c_wsl_select.PNG)
+
 This should result in a new prompt that looks like:
+
 ![wsl_terminal](images/introduction_to_c_wsl_terminal.PNG)
+
 At this point, we can compile our application and run it with the following commands:
+
 ![code_execution](images/introduction_to_c_code_execution.PNG)
 
 ### Why we did all of that
