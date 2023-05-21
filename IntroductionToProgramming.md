@@ -89,13 +89,13 @@ int main(){
 }
 ```
 
-While many of these look like numbers (and they are), they're different kinds of numbers. You can head over and review the (Data Types)[./DataTypes.md] Document to gain an understanding of how they're different.
+While many of these look like numbers (and they are), they're different kinds of numbers. You can head over and review the ![Data Types](./DataTypes.md) Document to gain an understanding of how they're different.
 ## Operators
 Operators are used to indicate implicit operations on variables. We have Unary and Binary operators which operate on 1 or 2 variables respectively.
 ### Unary Operators
 Unary operators only effect one variable at a time. There are two key unary operators that we have to address: increment and decrement
 #### Increment
-Increment is used to increase the value of a variable by one. This only applies to numerical (Data Types)[./DataTypes.md]. The increment operator is `++`
+Increment is used to increase the value of a variable by one. This only applies to numerical ![Data Types](./DataTypes.md). The increment operator is `++`
 ```C
 int main(){
     int a = 1;
