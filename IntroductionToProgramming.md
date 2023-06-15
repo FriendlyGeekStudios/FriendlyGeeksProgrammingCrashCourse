@@ -62,7 +62,7 @@ Variables can be thought of as little boxes that you can put “stuff” into. I
 ```C
 int b = 80085;
 ```
-Here, we created a variable called `b` that is of type `int` (which is short for integer) and it contains the number `80085`; We can then print that out using the nifty printf function from the hello world function:
+Here, we created a variable called `b` that is of type `int` (which is short for integer) and it contains the number `80085`; We can then print that out using the nifty `printf`  function from the hello world program:
 ```C
 #include <iostream>
 
@@ -142,10 +142,11 @@ int x = 5;
 int y = x; // y will be assigned the value in x; a.k.a, 5
 ```
 - `<`: The Less than operator implies `x < y --> x is less than y`
-- `>`: the Greater than operator implies `x > y --> x is greater than y`
+- `>`: The Greater than operator implies `x > y --> x is greater than y`
 - `<=`: The Less Than or Equal To operator implies `x <= y --> x is less than or equal to y`
 - `>=`: The Greater Than or Equal To operator implies `x >= y --> x is greater than or equal to y`
 - `==`: The Equality operator implies `x == y --> x equals y`. This should be clearly distinguished from the `=` (assignment) operator described above
+- `%`: The Modulus operator, is rather unique and it finds the remainder after integer division. For example: `5 % 3 == 2` because `5` can be divided evenly by `3` once and afterwards it will have `2` left over. Its the same as `5-3(n) = 2`.
 
 ## Control Flow
 Control flow statements dictate how code executes based on conditions in the code. We'll explore the most common forms of control flow and see how they can be used improve program functionality.
@@ -243,7 +244,7 @@ switch(var){
 ```
 There are a few things to note here:
 - `case`: This indicates a specific condition variable that we might be interested in for our variable. If our variable matches the case value, the code in the body of the `case` operation will be executed.
-- `break`: Once you're satisfied with a specific `case` you can terminate the rest of the execution of `switch` statement by using a `break` statement. This will immediately jump to the next statement *after* the `switch` statement
+- `break`: Once you're satisfied with a specific `case` you can terminate the rest of the execution of `switch` statement by using a `break` statement. This will immediately jump to the next statement *after* the `switch` statement. If you do not `break` after matching a condition, then the `switch` statement will continue to check additional cases. In some scenarios this is appropriate behavior, but in most cases its not what you want.
 - `default`: If no `break` statement is used prior to checking reach this point, then the `default` clause will be executed
 ## Organization and Structure
 The last thing we will introduce in this topic is the function. A function is a series of statements that can be invoked or called from other parts of your code. This is super handy for reusing the same blocks of code that achieve a specific purpose. Thus far, we've been regularly using two functions: `main` and `printf`. 
@@ -275,4 +276,11 @@ int main(){
 ```
 
 ## Exercises:
-1. Git Gud
+1. Create an array of size `10` that is initialized to all `0`'s. Using a for loop, fill the array with the numbers 1-10. Lastly, print each number in the array in ascending order.
+2. Create a function that takes in a number and prints "even" if the number is even, otherwise print "false". (Hint: what binary operator might be useful for this???);
+3. Using a for loop, can you print the alphabet? Lowercase characters only!
+4. Write a function that will take an integer as an argument, and, using a `switch` statement, print the day of the week depending on the number
+  * The input number should be between 0 and 7 where 0 represents Sunday and 7 represents Saturday.
+  * What happens if the number is greater than 7 or less than 0? Can we constrain it somehow?
+5. Write a function that will take a `char` as an argument, and return `1` if the `char` is a vowel and 0 otherwise. Can you do this with a `switch` statement?
+6. Create an array containing the `char`acters in your name and print them out using a `for` loop.
